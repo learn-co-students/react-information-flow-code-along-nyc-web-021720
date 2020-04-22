@@ -198,6 +198,7 @@ in a random color as the argument:
 class Child extends Component {
   render() {
     return (
+      // the () => is calling the newChildrenColor from parents changeColor
       <div onClick={() => this.props.handleColorChange(getRandomColor())}
         className="child"
         style={{backgroundColor: this.props.color}}
